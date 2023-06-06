@@ -1,0 +1,46 @@
+:host {
+    ul {
+        list-style: none;
+
+        li:not(:first-child) {
+            margin-top: 15px;
+        }
+
+        li:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        li {
+            display: flex;
+            border: 1px solid rgba(170, 161, 161, 0.70);
+            padding: 5px;
+
+            *:not(:last-child) {
+                margin-right: 20px;
+            }
+
+            .product-image {
+                width: 50px;
+                height: 50px;
+                flex: 0 1;
+            }
+
+            .product-description {
+                flex: 1;
+            }
+
+            .product-description,
+            .add-to-basket {
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
