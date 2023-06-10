@@ -1,0 +1,16 @@
+div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    img {
+        width: 40%;
+        height: 40%;
+        margin: auto;
+    }
+
+    h2 {
+        margin: auto;
+    }
+}

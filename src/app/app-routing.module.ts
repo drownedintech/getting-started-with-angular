@@ -1,16 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { ProductListModule } from './product-list/product-list.module';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
     path: 'products',
-    loadChildren: () => ProductListModule
+    loadChildren: () => import('./product-list/product-list.module').then(m => m.ProductListModule)
   },
   {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent
   }
 ];
 
