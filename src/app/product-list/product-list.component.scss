@@ -14,15 +14,15 @@
             display: flex;
             border: 1px solid rgba(170, 161, 161, 0.70);
             padding: 5px;
+            height: fit-content;
 
             *:not(:last-child) {
                 margin-right: 20px;
             }
 
             .product-image {
-                width: 50px;
-                height: 50px;
-                flex: 0 1;
+                max-width: 50px;
+                flex: 1;
             }
 
             .product-description {
@@ -31,8 +31,6 @@
 
             .product-description,
             .add-to-basket {
-                height: 50px;
-                line-height: 50px;
                 text-align: center;
 
                 span {

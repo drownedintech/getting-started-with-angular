@@ -1,0 +1,26 @@
+.product-image {
+    display: flex;
+    justify-content: center;
+
+    app-product-image {
+        width: 350px;
+    }
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.product-description {
+    flex: 1;
+}
+
+.product-reviews {
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}

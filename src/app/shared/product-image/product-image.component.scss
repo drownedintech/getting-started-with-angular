@@ -1,0 +1,9 @@
+img {
+    object-fit: scale-down;
+    max-width: 100%;
+    transition: ease 2s;
+}
+
+img:hover {
+    transform: scaleY(-1);
+}

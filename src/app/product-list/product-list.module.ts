@@ -5,6 +5,9 @@ import { ProductListRoutingModule } from './product-list-routing.module';
 import { ProductListComponent } from './product-list.component';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import { ProductImageComponent } from '../shared/product-image/product-image.component';
+import { AddToBasketComponent } from '../shared/add-to-basket/add-to-basket.component';
+import { ProductDescriptionComponent } from '../shared/product-description/product-description.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { MatIconModule } from '@angular/material/icon';
     CommonModule,
     ProductListRoutingModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    ProductImageComponent,
+    ProductDescriptionComponent,
+    AddToBasketComponent
   ]
 })
 export class ProductListModule { }
