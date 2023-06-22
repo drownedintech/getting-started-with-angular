@@ -8,6 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { ProductImageComponent } from '../shared/product-image/product-image.component';
 import { AddToBasketComponent } from '../shared/add-to-basket/add-to-basket.component';
 import { ProductDescriptionComponent } from '../shared/product-description/product-description.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ProductDescriptionComponent } from '../shared/product-description/produ
     ProductListRoutingModule,
     MatListModule,
     MatIconModule,
+    MatCardModule,
     ProductImageComponent,
     ProductDescriptionComponent,
     AddToBasketComponent

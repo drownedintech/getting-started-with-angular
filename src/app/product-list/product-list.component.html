@@ -1,23 +1,49 @@
-<ul>
-    <li [routerLink]="'/product'">
-        <app-product-image class="product-image" />
-        <div class="product-description">
+<div class="product-list">
+    <mat-card [routerLink]="'/product'" class="product-card">
+        <mat-card-header>
+            <mat-card-title>Product Title</mat-card-title>
+        </mat-card-header>
+
+        <app-product-image mat-card-image class="product-image" />
+
+        <mat-card-content>
             <app-product-description />
-        </div>
-        <app-add-to-basket />
-    </li>
-    <li [routerLink]="'/product'">
-        <app-product-image class="product-image" />
-        <div class="product-description">
+        </mat-card-content>
+
+        <mat-card-actions>
+            <app-add-to-basket />
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card [routerLink]="'/product'" class="product-card">
+        <mat-card-header>
+            <mat-card-title>Product Title</mat-card-title>
+        </mat-card-header>
+
+        <app-product-image mat-card-image class="product-image" />
+
+        <mat-card-content>
             <app-product-description />
-        </div>
-        <app-add-to-basket />
-    </li>
-    <li [routerLink]="'/product'">
-        <app-product-image class="product-image" />
-        <div class="product-description">
+        </mat-card-content>
+
+        <mat-card-actions>
+            <app-add-to-basket />
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-card [routerLink]="'/product'" class="product-card">
+        <mat-card-header>
+            <mat-card-title>Product Title</mat-card-title>
+        </mat-card-header>
+
+        <app-product-image mat-card-image class="product-image" />
+
+        <mat-card-content>
             <app-product-description />
-        </div>
-        <app-add-to-basket />
-    </li>
-</ul>
+        </mat-card-content>
+
+        <mat-card-actions>
+            <app-add-to-basket />
+        </mat-card-actions>
+    </mat-card>
+</div>

@@ -1,44 +1,40 @@
-:host {
-    ul {
-        list-style: none;
+.product-list {
+    margin: 0 50px;
+}
 
-        li:not(:first-child) {
-            margin-top: 15px;
-        }
+.product-card:not(:last-child) {
+    margin-bottom: 20px;
+}
 
-        li:not(:last-child) {
-            margin-bottom: 15px;
-        }
+.product-title {
+    flex: 1;
+    margin: auto;
+    text-align: center;
+}
 
-        li {
-            display: flex;
-            border: 1px solid rgba(170, 161, 161, 0.70);
-            padding: 5px;
-            height: fit-content;
+.product-image {
+    height: 250px;
+    margin: auto;
+}
 
-            *:not(:last-child) {
-                margin-right: 20px;
-            }
+app-add-to-basket {
+    height: fit-content;
+    margin: auto;
+}
 
-            .product-image {
-                max-width: 50px;
-                flex: 1;
-            }
+.card {
+    display: flex;
+    flex-direction: column;
+}
 
-            .product-description {
-                flex: 1;
-            }
+.card__cover {
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    padding: 5px;
+}
 
-            .product-description,
-            .add-to-basket {
-                text-align: center;
-
-                span {
-                    display: inline-block;
-                    vertical-align: middle;
-                    line-height: normal;
-                }
-            }
-        }
-    }
+.card__content {
+    /* Take available height */
+    flex: 1;
 }
