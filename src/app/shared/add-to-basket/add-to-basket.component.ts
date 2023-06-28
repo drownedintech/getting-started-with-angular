@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -11,5 +11,12 @@ import { MatButtonModule } from '@angular/material/button';
   styleUrls: ['./add-to-basket.component.scss']
 })
 export class AddToBasketComponent {
+  @Output()
+  public itemAdded = new EventEmitter<number>();
 
+  private currentAmount: number = 0;
+
+  public addItemToBasket(): void {
+    this.itemAdded.emit(++this.currentAmount);
+  }
 }
